@@ -22,6 +22,10 @@ $dark-color: #707070;
   color: $light-color;
 }
 
+.text-primary {
+  color: $primary-color;
+}
+
 .btn {
   padding: 1.2rem 0.8rem;
   text-align: center;
@@ -70,7 +74,7 @@ $dark-color: #707070;
   }
 
   ::placeholder {
-    color: #f2f2f2;
+    color: #cfcfcf;
   }
 }
 
@@ -218,6 +222,9 @@ body {
     padding: 2rem 0 1rem 0;
     border-bottom: 2px solid rgba($dark-color, 0.3);
     margin-bottom: 4rem;
+    h1 {
+      white-space: nowrap;
+    }
   }
 
   &__table {
@@ -226,6 +233,8 @@ body {
       width: 100%;
       margin-top: 2rem;
       border-collapse: collapse;
+      display: block;
+      white-space: nowrap;
     }
 
     thead {
@@ -263,6 +272,13 @@ body {
     button {
       align-self: center;
       margin-top: -5px;
+    }
+  }
+  &__table {
+    overflow-x: auto;
+
+    table {
+      width: 0rem;
     }
   }
 }
@@ -319,6 +335,10 @@ body {
 
   &__table {
     overflow-x: auto;
+
+    table {
+      width: 0rem;
+    }
   }
 }
 
